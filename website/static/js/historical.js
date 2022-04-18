@@ -59,7 +59,7 @@ function doWork() {
         
         var pastDate = currentDate - 432000;
     
-        var url = `http://api.openweathermap.org/data/2.5/air_pollution/history?lat=${latitude}&lon=${longitude}&start=${pastDate}&end=${currentDate}&appid=${api_key}`
+        var url = `https://api.openweathermap.org/data/2.5/air_pollution/history?lat=${latitude}&lon=${longitude}&start=${pastDate}&end=${currentDate}&appid=${api_key}`
     
     
         var Histsettings = {
