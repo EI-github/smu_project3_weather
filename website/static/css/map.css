@@ -1,0 +1,24 @@
+/* Remove the default margin and padding from the body. */
+body {
+    padding: 50;
+    margin: 50;
+  }
+  
+  /* Set map, body, and html to 100% of the screen size. */
+  #map,
+  body,
+  html {
+    height: 80%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .myDivIcon {
+    text-align: center;
+    /* Horizontally center the text (icon) */
+    line-height: 20px;
+    /* Vertically center the text (icon) */
+  }
+  

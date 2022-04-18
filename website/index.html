@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+
+    <!-- JavaScript file -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+</head>
+
+<body>
+    <br>
+
+    <center><h1>Homepage</h1></center>
+
+
+    <div class="site-content">
+        <div class="site-header">
+            <div class="container">
+                <a href="index.html" class="branding">
+                    <img src="images/logo.png" alt="" class="logo">
+                    <div class="logo-type">
+                        <h1 class="site-title">Project 3 - Group 5</h1>
+                        <small class="site-description">SMU Data Science Boot Camp December 2021</small>
+                    </div>
+                </a>
+
+                <!-- Default snippet for navigation -->
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="current.html">Current</a></li>
+                        <li class="menu-item"><a href="forecast.html">Forecast</a></li>
+                        <li class="menu-item"><a href="historical.html">Historical</a></li>
+                        <li class="menu-item"><a href="about.html">About</a></li>
+                        <li class="menu-item"><a href="references.html">References</a></li>
+                    </ul> <!-- .menu -->
+                </div> <!-- .main-navigation -->
+
+                <div class="mobile-navigation"></div>
+
+            </div>
+        </div> <!-- .site-header -->
+
+
+        <div class="hero" data-bg-image="images/banner.png">
+            <div class="container">
+                <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Search:</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Enter your city" id="cityName">
+                <br>
+                <input class="button" type="submit" id="submit" name="Submit" value="Find"/>
+    
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="humidity"></div>
+                </div>
+                <div class="col-md-4">
+                    <div id="temperature"></div>
+                </div>
+                <div class="col-md-4">
+                    <div id="pressure"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="curAqi"></div>
+                </div>
+                <div id="refTable" class="col-md-4">
+                    <p>Descritption of Air Quality Index Levels</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Qualitative Name</th>
+                                <th>Index</th>
+                            </tr>
+                        </thead> 
+                            <tbody>
+                                <tr>
+                                    <td>Good</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fair</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Moderate</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Poor</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Very Poor</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
