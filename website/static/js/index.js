@@ -148,7 +148,7 @@ function requestCurPolAjax() {
    const geoSettings = {
     "async": true,
     "crossDomain": true,
-    "url": `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_key}`,
+    "url": `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_key}`,
     "method": "GET",
     };
 
@@ -161,7 +161,7 @@ function requestCurPolAjax() {
         console.log(latitude);
         console.log(longitude);
 
-    var url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${api_key}`
+    var url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${api_key}`
 
     var curaqisettings = {
         "async": true,

@@ -14,7 +14,7 @@ function doWork() {
    const geoSettings = {
     "async": true,
     "crossDomain": true,
-    "url": `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${HIST_API_KEY}`,
+    "url": `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${HIST_API_KEY}`,
     "method": "GET"
     };
 
